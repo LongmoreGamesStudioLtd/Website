@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content - Jack Longmore</title>
+  <link rel="icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" type="image/png">
+  <link rel="apple-touch-icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="slideshow.css" />
+  <link rel="stylesheet" href="expandable.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" style="display: none; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;" id="mainSidebar">
+    <a href="#youtube"><span>YouTube</span></a>
+    <a href="#instagram"><span>Instagram</span></a>
+    <a href="#tiktok"><span>TikTok</span></a>
+  </div>
+
+  <!-- Top navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img id="logo" src="NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD" class="nav-logo">
+        <span>Longy Dev</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="work-experience.html">Work XP</a>
+      <a href="awards.html">Awards</a>
+      <a href="content.html" class="current">Content</a>
+      <a href="freelance.html">Services</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="nav-hamburger" id="navHamburger" onclick="this.classList.toggle('active'); document.getElementById('navDropdown').classList.toggle('active');">&#9776;</div>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="index.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Home</a>
+      <a href="portfolio.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Portfolio</a>
+      <a href="work-experience.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Work XP</a>
+      <a href="awards.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Awards</a>
+      <a href="content.html" class="current" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Content</a>
+      <a href="freelance.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Services</a>
+      <div class="dropdown-socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+  <!-- YOUTUBE -->
+  <section id="youtube">
+    <h2>YouTube</h2>
+    
+    <div style="text-align: center; padding-bottom: 2rem; margin-bottom: 3rem;">
+      <p>YouTube is a great way to see who I am as a person and visually explore what I've created. I post a mix of game development tutorials, project development logs and topic videos.</p>
+
+      <p>YouTube is something I'm very passionate about and I love documenting my journey through game development!</p>
+    </div>
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    <!-- Featured YouTube Videos -->
+    <div class="youtube-featured">
+      <!-- AI Sheep Dog - Video Left -->
+      <div class="youtube-featured-item" id="ai-sheep-dog">
+        <div class="youtube-video-wrapper" style="aspect-ratio: 16/9; width: 100%; max-width: 560px; margin: 0 auto;">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/-KtcWmoTKhY" title="YouTube video player" frameborder="0" allowfullscreen style="width:100%; height:100%; aspect-ratio:16/9;"></iframe>
+        </div>
+        <div class="youtube-text-wrapper">
+          <h3>AI Sheep Dog!</h3>
+          <p>An AI project where I used machine learning to train a dog to herd sheep into a pen.</p>
+        </div>
+      </div>
+
+      <!-- 2D Game Character Workflow - Text Left, Video Right -->
+      <div class="youtube-featured-item">
+        <div class="youtube-text-wrapper">
+          <h3>My 2D Game Character Workflow - Procreate to Unity!</h3>
+          <p>My most popular video: how to import and get your 2D character game engine ready.</p>
+        </div>
+        <div class="youtube-video-wrapper" style="aspect-ratio: 16/9; width: 100%; max-width: 560px; margin: 0 auto;">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/SHiM3BHJBTM" title="YouTube video player" frameborder="0" allowfullscreen style="width:100%; height:100%; aspect-ratio:16/9;"></iframe>
+        </div>
+      </div>
+
+      <!-- Massive Group Project - Video Left, Text Right -->
+      <div class="youtube-featured-item">
+        <div class="youtube-video-wrapper" style="aspect-ratio: 16/9; width: 100%; max-width: 560px; margin: 0 auto;">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/fQD0QXO6-rw" title="YouTube video player" frameborder="0" allowfullscreen style="width:100%; height:100%; aspect-ratio:16/9;"></iframe>
+        </div>
+        <div class="youtube-text-wrapper">
+          <h3>Massive Group Project! Game Studio Practice!</h3>
+          <p>My experience running a practice games studio at university — team roles, management and lessons learned.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION SEPARATOR -->
+  <div class="section-separator"></div>
+
+  <!-- INSTAGRAM -->
+  <section id="instagram">
+    <h2>Instagram Reels</h2>
+    
+    <div style="text-align: center; padding-bottom: 2rem; margin-bottom: 3rem;">
+      <p>Follow my Instagram for bite-sized game development content, behind-the-scenes moments, and creative inspiration!</p>
+    </div>
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <!-- Instagram Reels Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+      <!-- Reel 1 -->
+      <div style="background: var(--card-bg); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(124, 166, 126, 0.15); text-align: center;">
+        <div style="width: 100%; aspect-ratio: 9/16; background: rgba(124, 166, 126, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+          <iframe src="https://www.instagram.com/p/DW1uK1JDcRj/embed" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Instagram Reel 1</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">See more on my Instagram!</p>
+      </div>
+
+      <!-- Reel 2 -->
+      <div style="background: var(--card-bg); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(124, 166, 126, 0.15); text-align: center;">
+        <div style="width: 100%; aspect-ratio: 9/16; background: rgba(124, 166, 126, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+          <iframe src="https://www.instagram.com/p/DWmYoumjceb/embed" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Instagram Reel 2</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">See more on my Instagram!</p>
+      </div>
+
+      <!-- Reel 3 -->
+      <div style="background: var(--card-bg); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(124, 166, 126, 0.15); text-align: center;">
+        <div style="width: 100%; aspect-ratio: 9/16; background: rgba(124, 166, 126, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+          <iframe src="https://www.instagram.com/p/DWcYoAwjTel/embed" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Instagram Reel 3</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">See more on my Instagram!</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="https://www.instagram.com/longy_dev" target="_blank" style="color: var(--accent); text-decoration: underline; font-weight: 600;">
+        → View more on Instagram
+      </a>
+    </div>
+
+  </section>
+
+  <!-- SECTION SEPARATOR -->
+  <div class="section-separator"></div>
+
+  <!-- TIKTOK -->
+  <section id="tiktok">
+    <h2>TikTok</h2>
+    
+    <div style="text-align: center; padding-bottom: 2rem; margin-bottom: 3rem;">
+      <p>Check out my TikTok for quick game dev tips, funny moments, and entertaining content from my development journey!</p>
+    </div>
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <!-- TikTok Videos Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 3rem 0;">
+      <!-- TikTok 1 -->
+      <div style="background: var(--card-bg); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(124, 166, 126, 0.15); text-align: center;">
+        <div style="width: 100%; aspect-ratio: 9/16; background: rgba(124, 166, 126, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+          <iframe src="https://www.tiktok.com/embed/v2/7630448760752983318" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">TikTok 1</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Watch on TikTok!</p>
+      </div>
+
+      <!-- TikTok 2 -->
+      <div style="background: var(--card-bg); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(124, 166, 126, 0.15); text-align: center;">
+        <div style="width: 100%; aspect-ratio: 9/16; background: rgba(124, 166, 126, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+          <iframe src="https://www.tiktok.com/embed/v2/7623867334175870230" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">TikTok 2</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Watch on TikTok!</p>
+      </div>
+
+      <!-- TikTok 3 -->
+      <div style="background: var(--card-bg); border-radius: 16px; padding: 1.5rem; border: 1px solid rgba(124, 166, 126, 0.15); text-align: center;">
+        <div style="width: 100%; aspect-ratio: 9/16; background: rgba(124, 166, 126, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+          <iframe src="https://www.tiktok.com/embed/v2/7547785225166736662" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+        <h4 style="color: var(--accent); margin-bottom: 0.5rem;">TikTok 3</h4>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Watch on TikTok!</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="https://www.tiktok.com/@longydev" target="_blank" style="color: var(--accent); text-decoration: underline; font-weight: 600;">
+        → View more on TikTok
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jack Longmore</p>
+  </footer>
+
+  <!-- Preview Follower -->
+  <div class="preview-follower" id="previewFollower">
+    <img id="previewImage" src="" alt="Preview">
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Show/hide sidebar on scroll
+    const sidebar = document.getElementById('mainSidebar');
+    let hasScrolled = false;
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100 && !hasScrolled) {
+        hasScrolled = true;
+        sidebar.style.display = 'flex';
+        sidebar.style.opacity = '1';
+        sidebar.style.pointerEvents = 'auto';
+      } else if (window.scrollY <= 100 && hasScrolled) {
+        hasScrolled = false;
+        sidebar.style.opacity = '0';
+        sidebar.style.pointerEvents = 'none';
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>

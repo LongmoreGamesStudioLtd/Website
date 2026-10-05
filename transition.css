@@ -1,0 +1,136 @@
+﻿/* ===== PAGE TRANSITION ANIMATIONS ===== */
+
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0;
+  background: #1a1a1a;
+  transition: opacity 0.3s ease;
+}
+
+/* Swipe effect - slides down from top */
+.transition-swipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(151, 217, 154, 0.9) 0%, rgba(36, 36, 36, 0.95) 100%);
+  transform: translateY(-100%);
+}
+
+/* Title reveal on top of swipe */
+.transition-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.transition-title h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== TRANSITION ANIMATION STATES ===== */
+
+/* Starting state - overlay appears */
+.page-transition.active {
+  opacity: 1;
+  pointer-events: auto;
+  background: #1a1a1a;
+}
+
+/* Swipe slides in */
+.page-transition.active .transition-swipe {
+  animation: slideInSwipe 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Title fades and scales in with swipe */
+.page-transition.active .transition-title {
+  animation: titleReveal 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Everything exits together */
+.page-transition.exiting {
+  animation: fadeOutComplete 1.8s ease-out forwards;
+}
+
+.page-transition.exiting .transition-swipe {
+  animation: slideOutSwipe 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s forwards;
+}
+
+/* ===== KEYFRAME ANIMATIONS ===== */
+
+@keyframes slideInSwipe {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutSwipe {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes titleReveal {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeOutComplete {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .transition-title h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .transition-title h2 {
+    font-size: 2rem;
+  }
+}
+
+
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awards - Jack Longmore</title>
+  <link rel="icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" type="image/png">
+  <link rel="apple-touch-icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="slideshow.css" />
+  <link rel="stylesheet" href="expandable.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" style="display: none; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;" id="mainSidebar">
+    <a href="#events"><span>Awards</span></a>
+  </div>
+
+  <!-- Top navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img id="logo" src="NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD" class="nav-logo">
+        <span>Longy Dev</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="work-experience.html">Work XP</a>
+      <a href="awards.html" class="current">Awards</a>
+      <a href="content.html">Content</a>
+      <a href="freelance.html">Services</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="nav-hamburger" id="navHamburger" onclick="this.classList.toggle('active'); document.getElementById('navDropdown').classList.toggle('active');">&#9776;</div>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="index.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Home</a>
+      <a href="portfolio.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Portfolio</a>
+      <a href="work-experience.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Work XP</a>
+      <a href="awards.html" class="current" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Awards</a>
+      <a href="content.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Content</a>
+      <a href="freelance.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Services</a>
+      <div class="dropdown-socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- AWARDS AND EVENTS -->
+  <section id="events" style="padding: 4rem 2rem;">
+    <h2>Awards and Events</h2>
+
+    <p style="text-align: center;">A collection of awards, recognitions, and notable events that have been significant milestones in my game development journey.</p>
+
+    <!-- GRADUATION -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase">
+      <h3>Graduation! 🎓</h3>
+      <div class="project-content">
+        <div class="project-media">
+          <div class="gallery">
+            <div class="gallery-item"><img src="Images/SlideShow/Grad.png" alt="Graduation"></div>
+            <div class="gallery-item"><img src="Images/SlideShow/Grad2.jpeg" alt="Graduation"></div>
+            <div class="gallery-item"><img src="Images/SlideShow/Grad3.jpeg" alt="Graduation"></div>
+            <div class="gallery-item"><img src="Images/SlideShow/Grad4.jpeg" alt="Graduation"></div>
+          </div>
+          <p>Celebrating the completion of my degree in Game Development at Birmingham City University. A significant milestone marking the end of an incredible educational journey and the beginning of my professional career.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="card highlight">
+            <h4>What This Means</h4>
+            <ul>
+              <li>Successfully completed a comprehensive game development degree.</li>
+              <li>Developed portfolio of professional-quality projects.</li>
+              <li>Ready to pursue opportunities in the game development industry.</li>
+            </ul>
+            <h4 style="margin-top: 1rem;">Key Takeaway</h4>
+            <p>Graduation represents not an end, but a beginning—ready to apply all I've learned to create amazing games in the industry.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BCU AWARDS -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase">
+      <h3>BCU Awards</h3>
+      <div class="project-content reverse">
+        <div class="project-media">
+          <div class="gallery">
+            <div class="gallery-item"><img src="Images/SlideShow/BCU Awards.jpeg" alt="Award"></div>
+            <div class="gallery-item"><img src="Images/SlideShow/Bcu Awards 2.jpeg" alt="Award"></div>
+          </div>
+          <p>Recognition and awards received from Birmingham City University for business and entrepreneurial achievements in the game development.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="card highlight">
+            <h4>Recognition Received</h4>
+            <ul>
+              <li>Acknowledged for going outside the box with creating a YouTube channel.</li>
+              <li>Recognized contributions to university projects and community.</li>
+            </ul>
+            <h4 style="margin-top: 1rem;">Key Takeaway</h4>
+            <p>These awards validate the hard work and dedication invested in my studies and projects throughout my time at BCU.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HATCHERY PROGRAM AWARD -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase">
+      <h3>Hatchery Program Award!</h3>
+      <div class="project-content">
+        <div class="project-media">
+          <div class="gallery">
+            <div class="gallery-item"><img src="Images/SlideShow/Hatchery.png" alt="Hatchery Award"></div>
+             <div class="gallery-item"><img src="Images/SlideShow/Hathcery award.jpeg" alt="Hatchery Award"></div>
+          </div>
+          <p>Selected for and completed the Hatchery Program, a bootcamp on how to create and run a business.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="card highlight">
+            <h4>Program Highlights</h4>
+            <ul>
+              <li>Intensive training and mentorship from industry professionals.</li>
+              <li>Access to a fresh new business course.</li>
+              <li>Networking with peers and like minded people.</li>
+            </ul>
+            <h4 style="margin-top: 1rem;">Key Takeaway</h4>
+            <p>This program provided invaluable insight into business.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BCU SHOWCASE -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase">
+      <h3>BCU Showcases & Games Academy Opening!</h3>
+      <div class="project-content reverse">
+        <div class="project-media">
+          <video class="youtube-video" autoplay loop muted style="border-radius: 8px; width: 100%; height: 350px; object-fit: cover;">
+            <source src="NewVideos/GamesAc.mp4" type="video/mp4">
+          </video>
+          <p>Featured in the BCU Showcase event celebrating the launch of the new Games Academy. This was an opportunity to present my work to industry professionals, academics, and fellow students.</p>
+        </div>
+        <div class="project-sidebar">
+          <div class="card highlight">
+            <h4>Event Experience</h4>
+            <ul>
+              <li>Presented portfolio projects to industry professionals.</li>
+              <li>Made valuable connections with peers and industry mentors.</li>
+            </ul>
+            <h4 style="margin-top: 1rem;">Key Takeaway</h4>
+            <p>Showcasing work in a professional setting provided confidence and valuable feedback for future development endeavors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jack Longmore</p>
+  </footer>
+
+  <!-- Preview Follower -->
+  <div class="preview-follower" id="previewFollower">
+    <img id="previewImage" src="" alt="Preview">
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Show/hide sidebar on scroll
+    const sidebar = document.getElementById('mainSidebar');
+    let hasScrolled = false;
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100 && !hasScrolled) {
+        hasScrolled = true;
+        sidebar.style.display = 'flex';
+        sidebar.style.opacity = '1';
+        sidebar.style.pointerEvents = 'auto';
+      } else if (window.scrollY <= 100 && hasScrolled) {
+        hasScrolled = false;
+        sidebar.style.opacity = '0';
+        sidebar.style.pointerEvents = 'none';
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>

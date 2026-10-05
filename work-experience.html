@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Experience - Jack Longmore</title>
+  <link rel="icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" type="image/png">
+  <link rel="apple-touch-icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="slideshow.css" />
+  <link rel="stylesheet" href="expandable.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" style="display: none; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;" id="mainSidebar">
+    <a href="#work"><span>Work XP</span></a>
+  </div>
+
+  <!-- Top navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img id="logo" src="NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD" class="nav-logo">
+        <span>Longy Dev</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="work-experience.html" class="current">Work XP</a>
+      <a href="awards.html">Awards</a>
+      <a href="content.html">Content</a>
+      <a href="freelance.html">Services</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="nav-hamburger" id="navHamburger" onclick="this.classList.toggle('active'); document.getElementById('navDropdown').classList.toggle('active');">&#9776;</div>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="index.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Home</a>
+      <a href="portfolio.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Portfolio</a>
+      <a href="work-experience.html" class="current" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Work XP</a>
+      <a href="awards.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Awards</a>
+      <a href="content.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Content</a>
+      <a href="freelance.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Services</a>
+      <div class="dropdown-socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- WORK EXPERIENCE -->
+  <section id="work" style="padding: 4rem 2rem;">
+    <h2>Work Experience</h2>
+
+    <div style="text-align: center; padding-bottom: 2rem; margin-bottom: 3rem;">
+      <p>This section covers all relevant game development work experience I've had so far.</p>
+    </div>
+
+    <!-- GENERAL FREELANCE EXPERIENCE SUMMARY -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    <div class="project-showcase" id="freelance-summary">
+      <h3>Freelance Experience</h3>
+      <p style="text-align: center; margin-bottom: 2.5rem; color: var(--text-muted); font-size: 0.95rem; max-width: 600px; margin-left: auto; margin-right: auto;">Game dev, VR/AR, and video editing for clients. I build systems, create content, and help bring ideas to life.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
+        <a href="portfolio.html#aisle-survive" style="text-decoration: none; display: block;" class="work-xp-card">
+          <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center; height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+            <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+              <i class="fas fa-gamepad" style="color: #ffffff; font-size: 1.15rem;"></i>
+            </div>
+            <h4 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">Game Development</h4>
+            <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6; flex: 1;">Client and personal games built in Unity. Including Aisle Survive, shipped to Steam Early Access May 2026.</p>
+            <div style="margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid rgba(255,255,255,0.07); font-size: 0.82rem; font-weight: 600; color: var(--accent); letter-spacing: 0.03em;">View in Portfolio →</div>
+          </div>
+        </a>
+        <a href="portfolio.html#vr-ward" style="text-decoration: none; display: block;" class="work-xp-card">
+          <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center; height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+            <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+              <i class="fas fa-vr-cardboard" style="color: #ffffff; font-size: 1.15rem;"></i>
+            </div>
+            <h4 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">VR / AR Projects</h4>
+            <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6; flex: 1;">Immersive XR experiences built for clients, including a VR medical training simulation for NHS clinicians.</p>
+            <div style="margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid rgba(255,255,255,0.07); font-size: 0.82rem; font-weight: 600; color: var(--accent); letter-spacing: 0.03em;">View in Portfolio →</div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=EGfBfL-zl_0" target="_blank" style="text-decoration: none; display: block;" class="work-xp-card">
+          <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center; height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+            <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+              <i class="fas fa-film" style="color: #ffffff; font-size: 1.15rem;"></i>
+            </div>
+            <h4 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">Video Editing</h4>
+            <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6; flex: 1;">Professional video editing and content creation for clients and personal projects.</p>
+            <div style="margin-top: 1.2rem; padding-top: 0.9rem; border-top: 1px solid rgba(255,255,255,0.07); font-size: 0.82rem; font-weight: 600; color: var(--accent); letter-spacing: 0.03em;">Watch on YouTube →</div>
+          </div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="freelance.html" class="btn itch-btn" style="display: inline-block; font-size: 1.15rem; padding: 1rem 2rem;">
+          <i class="fas fa-briefcase"></i> View My Services
+        </a>
+      </div>
+    </div>
+
+    <!-- BIRMINGHAM OPEN MEDIA -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase" id="bom">
+      <h3>Birmingham Open Media - 2023</h3>
+      <div class="project-content">
+        <div class="project-media">
+          <div class="gallery" style="margin-bottom: 1.5rem;">
+            <div class="gallery-item"><img src="NewImages/BOM/BOM1 bootcamps.jpeg" alt="BOM Work 1"></div>
+            <div class="gallery-item"><img src="NewImages/BOM/BOM 3d scaning.jpeg" alt="BOM Work 2"></div>
+            <div class="gallery-item"><img src="NewImages/BOM/BOM-Logo-2023.png" alt="BOM Work 3"></div>
+            <div class="gallery-item"><img src="NewImages/BOM/BOMFORHIRE_v2_Page_06_Image_0001.jpg" alt="BOM Work 4"></div>
+          </div>
+          <p>I worked on VFX, VR projects, AR projects, Unity courseware projects, and team bootcamps. It was a chance to combine technical and creative work in a professional environment.</p>
+        </div>
+        <div class="project-sidebar" style="align-self: start;">
+          <div class="card highlight">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>How to collaborate with a multidisciplinary team (artists, developers and community managers).</li>
+              <li>Practice VFX skills!</li>
+              <li>Improved Unity workflow under real project deadlines.</li>
+            </ul>
+            <h4 style="margin-top: 1rem;">Key Takeaways</h4>
+            <p>Collaboration and community is the key to growth, not only as a person but as a developer. I improved communication and teaching skills. Professional projects prepared me for freelance and studio work, gaining an insight into finances and studio workflow.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 3rem; margin-top: 3rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <div>
+            <h4 style="color: var(--accent);">Heartbond VR Project</h4>
+            <p>This was a very interesting and unique project, I worked with my first client to create a VR anxiety relaxation game where there would be a murmuration VFX display that would react and change based on your heart rate and heart activities. I worked with someone from the company HeartMath who provided the Inner Balance Coherence Plus to provide reading I could take and use for the VFX. Unfortunately this project folded quite early on, but I was able to use some of the cool take and help bring the early stages of this idea to life.</p>
+          </div>
+          <video class="youtube-video" autoplay loop muted style="border-radius: 8px; width: 100%; height: 350px; object-fit: cover;">
+            <source src="NewVideos/HEartArtvideo.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <video class="youtube-video" autoplay loop muted style="border-radius: 8px; width: 100%; height: 350px; object-fit: cover;"><source src="NewVideos/BAths.mp4" type="video/mp4"></video>
+          <div>
+            <h4 style="color: var(--accent);">Baths Workshop Event - 3D Scanning and Printing</h4>
+            <p>This event took place inside a swimming pool! An abandoned swimming baths turned creative space. We explored the world of 3D scanning and printing. I helped the BOM CTO present this technology to students!</p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+          <div>
+            <h4 style="color: var(--accent);">VFX Showcase</h4>
+            <p>I worked on VFX within Unity. It was my main focus while on this placement. I was given access to lots of learning material to go through and learn all aspects on VFX. It was a massive step up from the basic Unity particle system, it really opened my eyes to the possibilities of in game effects.</p>
+          </div>
+          <div>
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/6GskK7eLHlw" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <video class="youtube-video" autoplay loop muted style="border-radius: 8px; width: 100%; height: 350px; object-fit: cover;">
+            <source src="NewVideos/Video Project 8.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h4 style="color: var(--accent);">Unity Courseware Work</h4>
+            <p>I worked through some Unity Associate courseware in order to take the test and earn the qualification. Although I completed and studied for the exam, my time at the placement came to an end and I could not get the funding to take the exam. However, this really helped me learn some valuable things.</p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <div>
+            <h4 style="color: var(--accent);">Unreal Engine BootCamps</h4>
+            <p>At these bootcamps I got to help teach others Unreal Engine 5, and Blender to create 3D environments or games to then show to industry people at a locally hosted event. I got to attend these events, meet great people and see people grow on their journey!</p>
+          </div>
+          <video class="youtube-video" autoplay loop muted style="border-radius: 8px; width: 100%; height: 350px; object-fit: cover;">
+            <source src="NewVideos/WhatsApp Video 2026-01-09 at 3.11.38 PM.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jack Longmore</p>
+  </footer>
+
+  <!-- Preview Follower -->
+  <div class="preview-follower" id="previewFollower">
+    <img id="previewImage" src="" alt="Preview">
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Show/hide sidebar on scroll
+    const sidebar = document.getElementById('mainSidebar');
+    let hasScrolled = false;
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100 && !hasScrolled) {
+        hasScrolled = true;
+        sidebar.style.display = 'flex';
+        sidebar.style.opacity = '1';
+        sidebar.style.pointerEvents = 'auto';
+      } else if (window.scrollY <= 100 && hasScrolled) {
+        hasScrolled = false;
+        sidebar.style.opacity = '0';
+        sidebar.style.pointerEvents = 'none';
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>

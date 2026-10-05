@@ -1,0 +1,226 @@
+﻿/* =========================================================
+   SLIDESHOW - CHILDHOOD PHOTOS
+========================================================= */
+#slideshow {
+  background: var(--bg);
+  padding: 4rem 2rem;
+}
+
+#slideshow h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.slideshow-intro {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.slide.fade {
+  animation: fade 0.8s;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+  background-color: rgba(151, 217, 154, 0.3);
+  border: 2px solid var(--accent);
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+.dots-container {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: rgba(151, 217, 154, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  border: 2px solid var(--accent);
+}
+
+.dot.active, .dot:hover {
+  background-color: var(--accent);
+}
+
+/* =========================================================
+   SKILLS - REORGANIZED GRID
+========================================================= */
+.skills-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills-intro p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.skill-category {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(151, 217, 154, 0.1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 100%;
+}
+
+.skill-category:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 450px;
+}
+
+.skill-category:hover {
+  border-color: rgba(151, 217, 154, 0.3);
+  box-shadow: 0 10px 40px rgba(151, 217, 154, 0.15);
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.skill-category h3 i {
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: rgba(151, 217, 154, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 3px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  background: rgba(151, 217, 154, 0.1);
+  transform: translateX(5px);
+}
+
+.skill-card h4 {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.skill-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVE - SLIDESHOW & SKILLS
+========================================================= */
+@media (max-width: 768px) {
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .prev, .next {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-category:nth-child(3) {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.1rem;
+  }
+}
+
+

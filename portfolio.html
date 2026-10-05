@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Jack Longmore</title>
+  <link rel="icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" type="image/png">
+  <link rel="apple-touch-icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="slideshow.css" />
+  <link rel="stylesheet" href="expandable.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" style="display: none; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;" id="mainSidebar">
+    <a href="#top-projects"><span>Top Projects</span></a>
+    <a href="#technical-projects"><span>Technical Projects</span></a>
+    <a href="#game-jams"><span>Game Jams</span></a>
+  </div>
+
+  <!-- Top navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img id="logo" src="NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD" class="nav-logo">
+        <span>Longy Dev</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="current">Portfolio</a>
+      <a href="work-experience.html">Work XP</a>
+      <a href="awards.html">Awards</a>
+      <a href="content.html">Content</a>
+      <a href="freelance.html">Services</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="nav-hamburger" id="navHamburger" onclick="this.classList.toggle('active'); document.getElementById('navDropdown').classList.toggle('active');">&#9776;</div>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="index.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Home</a>
+      <a href="portfolio.html" class="current" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Portfolio</a>
+      <a href="work-experience.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Work XP</a>
+      <a href="awards.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Awards</a>
+      <a href="content.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Content</a>
+      <a href="freelance.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Services</a>
+      <div class="dropdown-socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="banner" style="display: none;"></header>
+
+
+
+  <!-- GAMES -->
+  <section id="top-projects">
+    <h2>Top Projects</h2>
+
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <a href="https://longy-dev.itch.io/" target="_blank" class="btn itch-btn" style="display: inline-block; font-size: 1.1rem; padding: 0.8rem 1.5rem;">
+        <i class="fas fa-gamepad"></i> View All Games on Itch.io
+      </a>
+    </div>
+
+
+    <!-- AISLE SURVIVE -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    <div class="project-showcase" id="aisle-survive">
+      <h3>Aisle Survive 2026</h3>
+      <div class="project-content">
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>Main Game Developer for Skerratt Studios, working on this roguelite shop management game. DEMO is live on Steam and the Epic Games Store!</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Designing engaging shop management mechanics, balancing roguelite elements, and collaborating with a remote team to meet tight deadlines.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>Advanced Unity development and optimization for larger projects.</li>
+              <li>Team communication and agile workflows.</li>
+              <li>Balancing game systems for replayability and fun.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>Working on my first major project taught me the importance of planning, communication, and adaptability in game development. I programmed and made this game myself, this is a massive challenge especially for a first major project. But under the wing of Game designer Alex Skerratt, I was able to build his idea into a playable experience.</p>
+          </div>
+          <div style="margin: 1.5rem 0; display: flex; justify-content: center;">
+            <iframe src="https://store.steampowered.com/widget/4596550/" frameborder="0" width="646" height="190" style="max-width: 100%;"></iframe>
+          </div>
+        </div>
+        <div class="project-media">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/AqVFM1dJmXg" frameborder="0" allowfullscreen></iframe>
+          <div class="project-gallery">
+            <img src="NewImages/AlexGame/A screenshot 1.png" alt="Aisle Survive Screenshot 1">
+            <img src="NewImages/AlexGame/A screenshot 2.png" alt="Aisle Survive Screenshot 2">
+            <img src="NewImages/AlexGame/A screenshot 3.png" alt="Aisle Survive Screenshot 3">
+            <img src="NewImages/AlexGame/A screenshot 4.png" alt="Aisle Survive Screenshot 4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TREAT TIME -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    <div class="project-showcase" id="treat-time">
+      <h3>Treat Time! 2025</h3>
+      <div class="project-content">
+        <div class="project-media">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/l04swKVTowc" frameborder="0" allowfullscreen></iframe>
+          <div class="project-gallery">
+            <img src="Images/TreatTime/4 (10).png" alt="Treat Time Screenshot 1">
+            <img src="NewImages/TreatTimeImages/treat.png" alt="Treat Time Screenshot 2">
+            <img src="NewImages/TreatTimeImages/menu treattime.png" alt="Treat Time Screenshot 3" style="object-fit: cover; object-position: center 70%;">
+            <img src="NewImages/TreatTimeImages/=empyty board.png" alt="Treat Time Screenshot 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>This is my first mobile game. You can currently play it on itch.io via Chrome. I tested on Google Play but a few bugs delayed release — valuable experience.</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Navigating Google Play's publishing requirements and fixing platform-specific bugs that didn't appear during development. Balancing simplicity with enough depth to keep players engaged.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>Keeping code organised is crucial for long-term projects.</li>
+              <li>Understanding player psychology and flow — good difficulty curve, clear goals, responsive feedback.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>Mobile games suit my style: simple, addictive, and coherent. Functionality and fun matter most.</p>
+          </div>
+          <a href="https://longy-dev.itch.io/treat-time" target="_blank" class="btn itch-btn">
+            <i class="fas fa-gamepad"></i> Play on Itch.io
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAME AUDIO PROJECT -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase" id="game-audio">
+      <h3>My Game Audio Project 2025</h3>
+      <div class="project-content reverse">
+        <div class="project-media">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/3qQ3YovsNgA" frameborder="0" allowfullscreen></iframe>
+          <div class="project-gallery">
+            <img src="Images/UniWork/GameAudio/FeaturedAudio.png" alt="Game Audio Screenshot 1">
+            <img src="Images/UniWork/GameAudio/Untitled design (2).png" alt="Game Audio Screenshot 2">
+            <img src="Images/UniWork/GameAudio/Untitled design (3).png" alt="Game Audio Screenshot 3">
+            <img src="NewImages/GameAudioImages/Menu.png" alt="Game Audio Screenshot 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>I worked in a group of four to recreate and extend the audio for an existing game. The result added a necessary layer of polish.</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Coordinating audio design across a team of four and ensuring all sound elements felt cohesive. Matching audio cues to gameplay timing precisely.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>Game audio adds another layer that can transform a basic prototype into something memorable.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>Never leave audio until the end. Or you'll miss the chance to elevate your game's experience.</p>
+          </div>
+          <a href="https://longy-dev.itch.io/new-caves-and-ladders" target="_blank" class="btn itch-btn">
+            <i class="fas fa-gamepad"></i> Play on Itch.io
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+
+    <!-- PS4 CONSOLE GAME -->
+    <div class="project-showcase">
+      <h3>PS4 Console Game</h3>
+      <div class="project-content">
+        <div class="project-media">
+          <div style="background: var(--card-bg); padding: 3rem 2rem; border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; text-align: center; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);">
+            <i class="fab fa-tiktok" style="font-size: 4rem; color: var(--accent); margin-bottom: 1.5rem;"></i>
+            <h4 style="color: var(--text); font-size: 1.5rem; margin-bottom: 1rem;">Check Out My TikTok Video</h4>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 300px;">See the PS4 console game development and 3D level design in action!</p>
+            <a href="https://www.tiktok.com/@longydev/video/7552984854749613334" target="_blank" class="btn itch-btn">
+              <i class="fab fa-tiktok"></i> Watch on TikTok
+            </a>
+          </div>
+          <div class="project-gallery">
+             <img src="NewImages/ConsoleGame/Console 1.png" alt="Console Game Screenshot 1">
+            <img src="NewImages/ConsoleGame/Console 2.png" alt="Console Game Screenshot 2">
+            <img src="NewImages/ConsoleGame/Console 3.png" alt="Console Game Screenshot 3">
+            <img src="NewImages/ConsoleGame/Console 4.png" alt="Console Game Screenshot 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>A console game developed for PlayStation 4. This project showcased my ability to work with console platforms and optimize gameplay for a controller-based experience.</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Working within specific hardware constraints and adapting gameplay mechanics for controller input rather than keyboard and mouse.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>Developing for console platforms and controller input systems.</li>
+              <li>Optimizing game performance for specific hardware constraints.</li>
+              <li>Creating engaging gameplay tailored for console audiences.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>Console development requires different thinking around performance, controls, and user experience compared to mobile or PC platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- GAME DEVELOPMENT & TECHNICAL PROJECTS SUBSECTION -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <h3 id="technical-projects" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--accent); text-align: center; scroll-margin-top: calc(var(--nav-height) + 20px);">Technical Projects</h3>
+    <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 4.5rem; text-align: center;">Academic and technical projects exploring serious game development, AI, graphics programming, and engine architecture.</p>
+
+    <!-- VR WARD PROJECT (SERIOUS GAME) -->
+    
+    <div class="project-showcase" id="vr-ward">
+      <h3>VR Ward Project - Final Year Project</h3>
+      <div class="project-content">
+        <div class="project-media" style="margin-top: 2rem;">
+         
+        </div>
+        
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 3rem; margin-top: 3rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <video class="youtube-video" controls style="width: 100%; height: 350px; object-fit: cover;">
+            <source src="Images/UniWork/VR Ward/WhatsApp Video 2026-01-09 at 3.01.18 PM - Trim.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div>
+            <h4 style="color: var(--accent);">Project Overview</h4>
+            <p>This project aimed to create an interactive simulation to help medical students train for ward environments. The simulation works by maintaining a database of patients, each with different medical information and conditions. They are placed in beds throughout the ward, and the user's objective is to walk around and diagnose each patient based on the clinical information provided.</p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <div>
+            <h4 style="color: var(--accent);">Current Development</h4>
+            <p>The interactivity systems are currently a work in progress and are being actively developed by other students. A key feature I designed is the ability for doctors to add new medical conditions into the database via their computer, allowing the project to scale and remain relevant for extended educational use.</p>
+          </div>
+          <img src="Images/UniWork/VR Ward/com.oculus.browser-20251004-141448.jpg" alt="VR Ward Walkthrough" style="width: 100%; height: 350px; object-fit: cover; border-radius: 18px;">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <img src="Images/Ai_pVL.jpg" alt="VR Ward Collaboration" style="width: 100%; height: 350px; object-fit: cover; border-radius: 18px;">
+          <div>
+            <h4 style="color: var(--accent);">Collaboration & Support</h4>
+            <p>This project was made possible through collaboration with several key partners. The Henderson Fund provided crucial funding after I won their pitching competition. Sandwell Hospital and the University supplied essential medical information and expertise, ensuring clinical relevance and accuracy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI SHEEP DOG PROJECT -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase" id="ai-sheep-dog">
+      <h3>AI Sheep Dog 2025</h3>
+      <div class="project-content reverse">
+        <div class="project-media">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/-KtcWmoTKhY" frameborder="0" allowfullscreen></iframe>
+          <div class="project-gallery">
+              <img src="NewImages/Ai Dog/AI Dog Screenshot 1.png" alt="AI Dog Screenshot 1">
+              <img src="NewImages/Ai Dog/Ai Dog Screenshot 2.png" alt="AI Dog Screenshot 2">
+              <img src="NewImages/Ai Dog/Ai Dog Screenshot 3.png" alt="AI Dog Screenshot 3">
+              <img src="NewImages/Ai Dog/Ai Dog Screenshot 4.png" alt="AI Dog Screenshot 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>An AI project where I used machine learning to train a dog to herd sheep into a pen. Exploring how AI agents can learn complex behaviours through reinforcement learning.</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Designing a reward system that encouraged the right herding behaviour without the agent finding exploits. Tuning training parameters to achieve consistent results.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>How reinforcement learning agents are trained and how reward shaping impacts behaviour.</li>
+              <li>Integrating ML-Agents with Unity for AI-driven gameplay.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>AI and machine learning open up exciting possibilities for game behaviour that would be difficult to hand-code. The training process itself is a creative challenge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRAPHICS EXPERIMENTATION -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase">
+      <h3>Graphics Experimentation</h3>
+      <div class="project-content">
+        <div class="project-media">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/srArk0R27VU" frameborder="0" allowfullscreen></iframe>
+          <div class="project-gallery">
+            <img src="NewImages/GPU/GPU1.png" alt="GPU Screenshot 1">
+              <img src="NewImages/GPU/GPU2.png" alt="GPU Screenshot 2">
+              <img src="NewImages/GPU/GPU3.png" alt="GPU Screenshot 3">
+              <img src="NewImages/GPU/GPU4.png" alt="GPU Screenshot 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>I explored shaders and different rendering techniques such as ray tracing and path tracing. To learn more about how game engines render images and objects.</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Understanding the mathematics behind rendering algorithms and getting ray tracing to perform at usable frame rates.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>What rendering techniques are available and how they impact visuals.</li>
+              <li>More practice with C++ and graphics programming.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>Balancing visuals and performance is key. Understanding the underlying mechanics of rendering helps me make informed decisions in my game projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C++ GAME PROJECT (TECHNICAL) -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <div class="project-showcase">
+      <h3>C++ Game Project</h3>
+      <div class="project-content reverse">
+        <div class="project-media">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/bpjejLSwnm4" frameborder="0" allowfullscreen></iframe>
+          <div class="project-gallery">
+             <img src="NewImages/C++/C++ 1.png" alt="C++ Game Screenshot 1">
+              <img src="NewImages/C++/C++ 2.png" alt="C++ Game Screenshot 2">
+              <img src="NewImages/C++/C++ 3.png" alt="C++ Game Screenshot 3">
+              <img src="NewImages/C++/C++4.png" alt="C++ Game Screenshot 4">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="info-section">
+            <h4>About</h4>
+            <p>A solo project to create a small desktop game entirely in C++, focusing on memory management, performance, and architecture.</p>
+          </div>
+          <div class="info-section">
+            <h4>Challenges</h4>
+            <p>Managing memory manually without the safety nets of higher-level engines. Building core engine systems like the game loop and rendering pipeline from scratch.</p>
+          </div>
+          <div class="info-section">
+            <h4>What I Learned</h4>
+            <ul>
+              <li>Memory and resource management in C++.</li>
+              <li>Building a game loop and core engine systems from scratch.</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Key Takeaway</h4>
+            <p>Understanding low-level mechanics strengthens overall development skills. C++ allows full control but requires discipline and planning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAME JAMS SUBSECTION -->
+    <div style="border-top: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1; margin: 3rem 0;"></div>
+    
+    <h3 id="game-jams" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--accent); text-align: center; scroll-margin-top: calc(var(--nav-height) + 20px);">Game Jams</h3>
+    <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 2.5rem; text-align: center;">I love participating in Game Jams to push my skills and create innovative games under tight deadlines. Here’s a quick gallery of my favourite jam projects—click any to learn more and play on Itch.io!</p>
+
+    <div class="gamejam-gallery" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-bottom: 4rem;">
+      <a href="https://longy-dev.itch.io/were-you-invited" target="_blank" class="gamejam-card" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; background: var(--card-bg); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10); padding: 2rem 1.2rem; width: 270px; max-width: 95vw; transition: transform 0.2s;">
+        <img src="Images/SlideShow/GGJ2026.png" alt="GGJ 2026" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1.1rem;">
+        <span style="font-weight: 700; color: var(--accent); margin-bottom: 0.6rem; font-size: 1.13rem;">Global Game Jam 2026</span>
+        <span style="color: var(--text-muted); font-size: 1.02rem; text-align: center;">Sprite mask mechanic, 48-hour jam</span>
+      </a>
+      <a href="https://longy-dev.itch.io/chop-chop" target="_blank" class="gamejam-card" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; background: var(--card-bg); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10); padding: 2rem 1.2rem; width: 270px; max-width: 95vw; transition: transform 0.2s;">
+        <img src="NewImages/GGJ2023.png" alt="GGJ 2023" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1.1rem;">
+        <span style="font-weight: 700; color: var(--accent); margin-bottom: 0.6rem; font-size: 1.13rem;">Global Game Jam 2023</span>
+        <span style="color: var(--text-muted); font-size: 1.02rem; text-align: center;">Grid-based movement, 48-hour jam</span>
+      </a>
+      <a href="https://longy-dev.itch.io/yang-and-ying" target="_blank" class="gamejam-card" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; background: var(--card-bg); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10); padding: 2rem 1.2rem; width: 270px; max-width: 95vw; transition: transform 0.2s;">
+        <img src="NewImages/GGJ2022new.png" alt="GGJ 2022" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1.1rem;">
+        <span style="font-weight: 700; color: var(--accent); margin-bottom: 0.6rem; font-size: 1.13rem;">Global Game Jam 2022</span>
+        <span style="color: var(--text-muted); font-size: 1.02rem; text-align: center;">Award-winning sprite mask, 48-hour jam</span>
+      </a>
+      <a href="https://longy-dev.itch.io/caves-and-ladders" target="_blank" class="gamejam-card" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; background: var(--card-bg); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10); padding: 2rem 1.2rem; width: 270px; max-width: 95vw; transition: transform 0.2s;">
+        <img src="NewImages/GMTK.png" alt="GMTK Game Jam 2022" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1.1rem;">
+        <span style="font-weight: 700; color: var(--accent); margin-bottom: 0.6rem; font-size: 1.13rem;">GMTK Game Jam 2022</span>
+        <span style="color: var(--text-muted); font-size: 1.02rem; text-align: center;">Design & mechanics focus, 48-hour jam</span>
+      </a>
+      <a href="https://longy-dev.itch.io/shooting-stars" target="_blank" class="gamejam-card" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; background: var(--card-bg); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10); padding: 2rem 1.2rem; width: 270px; max-width: 95vw; transition: transform 0.2s;">
+        <img src="NewImages/Brackeys.png" alt="Brackeys Game Jam 2022" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 1.1rem;">
+        <span style="font-weight: 700; color: var(--accent); margin-bottom: 0.6rem; font-size: 1.13rem;">Brackeys Game Jam 2022</span>
+        <span style="color: var(--text-muted); font-size: 1.02rem; text-align: center;">Rapid prototyping, 48-hour jam</span>
+      </a>
+    </div>
+
+    <style>
+      @media (max-width: 700px) {
+        .gamejam-gallery {
+          flex-direction: column;
+          align-items: center;
+        }
+        .gamejam-card {
+          width: 98vw !important;
+          max-width: 98vw !important;
+          padding: 1.2rem 0.5rem !important;
+        }
+        .gamejam-card img {
+          height: 38vw !important;
+          min-height: 120px;
+          max-height: 180px;
+        }
+      }
+      .gamejam-card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(124,166,126,0.18), 0 2px 8px rgba(0,0,0,0.10);
+        border-color: var(--accent, #7ca67e);
+        transition: transform 0.18s cubic-bezier(.4,1.3,.6,1), box-shadow 0.18s, border-color 0.18s;
+        cursor: pointer;
+      }
+    </style>
+    </div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jack Longmore</p>
+  </footer>
+
+  <!-- Preview Follower -->
+  <div class="preview-follower" id="previewFollower">
+    <img id="previewImage" src="" alt="Preview">
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Show/hide sidebar on scroll
+    const sidebar = document.getElementById('mainSidebar');
+    let hasScrolled = false;
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100 && !hasScrolled) {
+        hasScrolled = true;
+        sidebar.style.display = 'flex';
+        sidebar.style.opacity = '1';
+        sidebar.style.pointerEvents = 'auto';
+      } else if (window.scrollY <= 100 && hasScrolled) {
+        hasScrolled = false;
+        sidebar.style.opacity = '0';
+        sidebar.style.pointerEvents = 'none';
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>

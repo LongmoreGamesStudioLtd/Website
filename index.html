@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Longmore Game Studios LTD | High-Quality Mobile Games</title>
+  <meta name="description" content="Longmore Game Studios LTD creates high-quality mobile games with a focus on polished gameplay and careful development." />
+  <link rel="icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" type="image/png">
+  <link rel="apple-touch-icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png">
+  <!-- Google Fonts: Sora + Manrope -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="slideshow.css"/>
+  <link rel="stylesheet" href="expandable.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Manrope', 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+      background: var(--bg);
+      color: var(--text);
+    }
+    h1, h2, h3, nav a {
+      font-family: 'Sora', 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+      letter-spacing: 0.01em;
+    }
+    .hero-content-panel {
+      max-width: 560px;
+      padding: 0;
+    }
+    @media (max-width: 768px) {
+      .hero-content-panel {
+        max-width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .about-grid {
+        display: block !important;
+        gap: 0 !important;
+        position: static !important;
+      }
+      .about-grid .vertical-divider {
+        display: none !important;
+      }
+      .about-grid > div {
+        margin-bottom: 1rem;
+      }
+      .about-content {
+        padding: 1.5rem 1rem !important;
+        margin-bottom: 1rem !important;
+      }
+      .about-bullets li {
+        font-size: 0.95rem !important;
+        gap: 0.8rem !important;
+        padding: 0.8rem 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="#top" class="nav-logo-link">
+        <div class="brand-logo-crop brand-logo-crop-nav">
+          <img src="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD">
+        </div>
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#top" class="current">Home</a>
+      <a href="#studio">Studio</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuOverlay">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-links">
+        <a href="#top" style="--i:0">Home</a>
+        <a href="#studio" style="--i:1">Studio</a>
+        <a href="#games" style="--i:2">Games</a>
+        <a href="#contact" style="--i:3">Contact</a>
+      </div>
+      <div class="menu-socials" style="--i:4">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="banner" style="display: flex; align-items: center; justify-content: center; padding: 1.5rem clamp(1rem, 4vw, 4rem); height: 100vh; overflow: hidden; margin-top: 0;">
+    <!-- Add <source src="./NewVideos/your-gameplay.mp4" type="video/mp4"> inside the video once the footage is ready -->
+    <video class="banner-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+    <div class="banner-video-fade" aria-hidden="true"></div>
+    <div class="hero-content-panel" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; z-index: 10; position: relative;">
+      <h1 class="hero-brand-heading"><span class="brand-logo-crop brand-logo-crop-hero"><img src="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD"></span></h1>
+      <p class="hero-studio-label">Games Studio</p>
+    </div>
+    <a class="hero-scroll-cue" href="#games" aria-label="Scroll to games" title="Scroll to games">
+      <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+    </a>
+  </header>
+
+  <main>
+    <section id="games" class="centered-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Our games</p>
+        <h2>Games</h2>
+        <p class="vision-statement">We are creating high-quality mobile games, with a focus on polished gameplay and careful production.</p>
+      </div>
+
+      <div class="game-gallery" aria-label="Longmore Game Studios games">
+        <article class="featured-game">
+          <div class="featured-game-shots" id="treatTimeShots">
+            <img src="./NewImages/TreatTimeImages/treattime-dog.png" alt="Treat Time dog waiting for food">
+            <img src="./NewImages/TreatTimeImages/treattime-grid.png" alt="Treat Time puzzle grid">
+            <img src="./NewImages/TreatTimeImages/treattime-buttons.png" alt="Treat Time bone and bowl buttons">
+            <img src="./NewImages/TreatTimeImages/treattime-food.png" alt="Treat Time requested food">
+          </div>
+          <h3>Treat Time</h3>
+          <p class="featured-game-description">Our first title, a casual mobile game about feeding your dog!</p>
+          <p class="featured-game-status">Coming soon to Apple and Android, December 2026.</p>
+          <div class="store-badges">
+            <span class="store-badge">
+              <i class="fa-brands fa-apple" aria-hidden="true"></i>
+              <span><small>Coming soon to the</small>App Store</span>
+            </span>
+            <span class="store-badge">
+              <i class="fa-brands fa-google-play" aria-hidden="true"></i>
+              <span><small>Coming soon to</small>Google Play</span>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="studio" class="centered-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">The studio</p>
+      </div>
+
+      <div class="story-split">
+        <div class="story-copy">
+          <p>
+            Longmore Game Studios LTD is a self-funded games studio founded by Jack Longmore, looking to make a mark in the mobile game space.
+          </p>
+
+          <p>
+            We focus on quality, with no pop-up ads, and build every game with longevity in mind.
+          </p>
+        </div>
+
+        <div class="owner-card" aria-label="Owner profile overview">
+          <img class="owner-photo" src="./Images/ME.JPG" alt="Jack, founder of Longmore Game Studios LTD, holding his dog">
+          <h3>Jack (Longy Dev)</h3>
+          <p>Founder & Creative Director</p>
+          <div class="owner-socials">
+            <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/longy_dev" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@longydev" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@LongyDev" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://longy-dev.itch.io/" target="_blank" rel="noopener" aria-label="itch.io"><i class="fab fa-itch-io"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="centered-shell section-block contact-block">
+      <div class="section-heading narrow">
+        
+        <h2>Contact the studio</h2>
+        <p class="vision-statement">For business enquiries, partnerships, or questions, send us a message.</p>
+      </div>
+
+      <div class="contact-wrapper" style="padding: 0; background: transparent; border: none; box-shadow: none;">
+        <form class="contact-form" action="https://formspree.io/f/xaqpeebo" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Contact for enquiries..." required></textarea>
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <button type="submit" class="cta-btn">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Longmore Game Studios LTD</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

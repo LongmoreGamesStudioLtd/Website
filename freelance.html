@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freelance Inquiries - Jack Longmore</title>
+  <link rel="icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png" type="image/png">
+  <link rel="apple-touch-icon" href="./NewImages/TempStudioLogo/My%20Logo%20Transparent.png">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="page-freelance">
+
+
+  <!-- Sidebar -->
+  <div class="sidebar" style="display: none; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;" id="mainSidebar">
+    <a href="#services"><span>Services</span></a>
+    <a href="#whatibuild"><span>Projects</span></a>
+    <a href="#reviews"><span>Reviews</span></a>
+    <a href="#howwework"><span>How I Work</span></a>
+    <a href="#pricing"><span>Pricing</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </div>
+
+  <!-- Top navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <img id="logo" src="NewImages/TempStudioLogo/My%20Logo%20Transparent.png" alt="Longmore Game Studios LTD" class="nav-logo">
+        <span>Longy Dev</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="work-experience.html">Work XP</a>
+      <a href="awards.html">Awards</a>
+      <a href="content.html">Content</a>
+      <a href="freelance.html" class="current">Services</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="nav-hamburger" id="navHamburger" onclick="this.classList.toggle('active'); document.getElementById('navDropdown').classList.toggle('active');">&#9776;</div>
+    <div class="nav-dropdown" id="navDropdown">
+      <a href="index.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Home</a>
+      <a href="portfolio.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Portfolio</a>
+      <a href="work-experience.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Work XP</a>
+      <a href="awards.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Awards</a>
+      <a href="content.html" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Content</a>
+      <a href="freelance.html" class="current" onclick="document.getElementById('navHamburger').classList.remove('active'); document.getElementById('navDropdown').classList.remove('active');">Services</a>
+      <div class="dropdown-socials">
+        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@LongyDev" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/longy_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@longydev" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header class="banner" style="display: none;"></header>
+
+
+
+  <!-- Hero Section -->
+  <section id="hero" style="text-align: center; padding: 5rem 2rem 4rem;">
+    <h2>Game Development Services</h2>
+    <p style="font-size: 2.0rem; color: var(--text-muted); max-width: 680px; margin: 0 auto 2rem; line-height: 1.6;">Unity specialist helping studios and individuals build, fix and polish Unity projects: games, simulations, tools and quick prototypes.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="cta-btn" style="cursor: pointer; display: flex; align-items: center; gap: 0.5rem; width: fit-content; margin: 0 auto;"><i class="fas fa-envelope" style="color: var(--accent); font-size: 0.95rem;"></i> Get A Free Quote</button>
+  </section>
+
+  <!-- Scroll Indicator -->
+  <div style="display: none; justify-content: center; padding: 0.8rem 0; width: 100%; margin-bottom: 2rem;">
+    <div style="text-align: center; cursor: pointer;" onclick="document.getElementById('whoiwork').scrollIntoView({behavior: 'smooth'})">
+      <div style="color: var(--accent); font-size: 3rem; animation: bounce 2s infinite; cursor: pointer;">•</div>
+    </div>
+  </div>
+
+  <div style="max-width: 1000px; margin: 2rem auto; border-bottom: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1;"></div>
+
+
+
+  <!-- Services Section -->
+  <section id="services" class="freelance-section">
+    <h2>What I Can Do</h2>
+    <p style="text-align: center; margin-bottom: 2.5rem; color: var(--text-muted); font-size: 0.95rem; max-width: 600px; margin-left: auto; margin-right: auto;">From single systems to full games. Here's where I can help.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
+      <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center;">
+        <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="fas fa-gamepad" style="color: #ffffff; font-size: 1.15rem;"></i>
+        </div>
+        <h3 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">Full Game Development</h3>
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6;">From concept and system design through to shipping. Complete Unity games built for PC, mobile, or console, with mechanics designed to work and keep players engaged.</p>
+      </div>
+      <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center;">
+        <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="fas fa-wrench" style="color: #ffffff; font-size: 1.15rem;"></i>
+        </div>
+        <h3 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">Bug Fixing &amp; Debugging</h3>
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6;">Fix broken systems, weird Unity issues, or things that "should be working but aren't."</p>
+      </div>
+      <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center;">
+        <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="fas fa-bolt" style="color: #ffffff; font-size: 1.15rem;"></i>
+        </div>
+        <h3 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">Prototyping</h3>
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6;">Turn your idea into a playable prototype fast so you can test, validate, and iterate.</p>
+      </div>
+      <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center;">
+        <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="fas fa-gauge-high" style="color: #ffffff; font-size: 1.15rem;"></i>
+        </div>
+        <h3 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">Performance &amp; Optimisation</h3>
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6;">Improve frame rate, reduce build size, and optimise for your target platform: PC, mobile, or XR.</p>
+      </div>
+      <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center;">
+        <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="fas fa-vr-cardboard" style="color: #ffffff; font-size: 1.15rem;"></i>
+        </div>
+        <h3 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">VR &amp; AR Development</h3>
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6;">XR interactions, immersive environments, and player setups across OpenXR, Meta Quest, and mixed reality platforms.</p>
+      </div>
+      <div class="card highlight" style="border-left: 4px solid var(--accent); padding: 1.5rem; text-align: center;">
+        <div style="width: 2.8rem; height: 2.8rem; background: linear-gradient(135deg, #1a1a1a, #7ca67e); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="fas fa-palette" style="color: #ffffff; font-size: 1.15rem;"></i>
+        </div>
+        <h3 style="color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem;">2D Art &amp; Visual Assets</h3>
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.6;">UI design, sprites, concept art and in-game visuals. I can handle the look of your game as well as the code behind it.</p>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width: 1000px; margin: 2rem auto; border-bottom: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1;"></div>
+
+  <!-- What I Can Build Section -->
+  <section id="whatibuild" class="freelance-section">
+    <h2>What I've Built</h2>
+    <div class="built-grid">
+
+      <!-- Aisle Survive — Featured -->
+      <div class="built-card built-card--featured">
+        <div class="built-card-img">
+          <img src="NewImages/AlexGame/A screenshot 1.png" alt="Aisle Survive Screenshot">
+          <span class="built-tag built-tag--steam">Live on Steam</span>
+        </div>
+        <div class="built-card-body">
+          <h3>Aisle Survive</h3>
+          <p>Took this roguelite shop management game from prototype to Steam and EPIC GAMES release as main developer for Skerratt Studios. Designed core systems, balanced gameplay and shipping to Early Access in July 2026.</p>
+          <div class="built-card-links" style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin-top: 1.5rem;">
+            <a href="portfolio.html#aisle-survive" target="_blank" class="btn itch-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; padding: 0.7rem 1.3rem;">See in Portfolio</a>
+            <a href="https://store.steampowered.com/app/4596550/Aisle_Survive/" target="_blank" class="btn itch-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; padding: 0.7rem 1.3rem;">View on Steam</a>
+            <a href="https://www.epicgames.com/store/en-US/p/aisle-survive" target="_blank" class="btn itch-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; padding: 0.7rem 1.3rem;">View on EPIC</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- VR Medical Training Simulation -->
+      <div class="built-card">
+        <div class="built-card-img">
+          <img src="Images/UniWork/VR Ward/3.jpg" alt="VR Medical Training Screenshot">
+          <span class="built-tag built-tag--vr">VR / XR</span>
+        </div>
+        <div class="built-card-body">
+          <h3>VR Medical Training Simulation</h3>
+          <p>Built modular systems for patients, illnesses, and interactions in a VR environment for medical training. Worked closely with NHS clinicians to deliver a real-world solution.</p>
+          <div class="built-card-links" style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin-top: 1.5rem;">
+            <a href="portfolio.html#vr-ward" target="_blank" class="btn itch-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; padding: 0.7rem 1.3rem;">See in Portfolio</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOM Birmingham Open Media -->
+      <div class="built-card">
+        <div class="built-card-img">
+          <img src="NewImages/BOM/BOM-Logo-2023.png" alt="BOM Birmingham Open Media Screenshot">
+          <span class="built-tag built-tag--industry">Industry XP</span>
+        </div>
+        <div class="built-card-body">
+          <h3>BOM (Birmingham Open Media)</h3>
+          <p>Worked with small companies and individuals on VR experiences and VFX projects. Real briefs, real deadlines, real output.</p>
+          <div class="built-card-links" style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin-top: 1.5rem;">
+            <a href="work-experience.html#bom" target="_blank" class="btn itch-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; padding: 0.7rem 1.3rem;">See in Work XP</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Trust Me & Reviews Section -->
+  <section id="reviews" class="freelance-section">
+    <h2>Why Trust Me?</h2>
+    <div class="freelance-review-grid">
+      <div class="freelance-review-card">
+        <p>"As both an intern and a final-year project student, Jack worked closely with me and NHS clinicians to expand our provision of medical training simulations. He successfully rose to the technical challenge of developing a centralised, web-based virtual reality hospital ward, while also gaining a strong understanding of the underlying clinical concepts."</p>
+        <p class="review-author">· Dr Andrew Wilson</p>
+        <p class="review-role">SFHEA, MIEE, MBCS</p>
+      </div>
+      <div class="freelance-review-card">
+        <p>"I'm currently working on a game with Jack and it's going great. He's a really good communicator, keeps me up to date with progress, and is very flexible. He's building the game in Unity and knows what he's doing. Would recommend."</p>
+        <p class="review-author">· Alex Skerratt</p>
+        <p class="review-role">Skerratt Studios</p>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width: 1000px; margin: 2rem auto; border-bottom: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1;"></div>
+
+  <!-- How We Work Section -->
+  <section id="howwework" style="padding: 4rem 2rem; max-width: 1000px; margin: 0 auto;">
+    <h2>How I Work</h2>
+    <p style="text-align: center; margin-bottom: 3rem; color: var(--text-muted); font-size: 0.95rem;">I keep things simple and clear:</p>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <h4>You Send Your Idea</h4>
+        <p>Tell me what you're building or what problem you need solved.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <h4>I Break It Down</h4>
+        <p>I explain how I'd approach it and what's realistic.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <h4>We Agree on Scope</h4>
+        <p>We set a clear scope and timeline before anything starts.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <h4>I Build &amp; Update You</h4>
+        <p>You receive builds and updates as development progresses.</p>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2.5rem; color: var(--text-muted); font-style: italic; font-size: 0.95rem;">No confusion, no disappearing. Just steady progress.</p>
+  </section>
+
+ 
+ 
+
+  <div style="max-width: 900px; margin: 2rem auto; border-bottom: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1;"></div>
+  <section id="pricing" style="padding: 4rem 2rem; max-width: 900px; margin: 0 auto;">
+    <h2>Pricing</h2>
+    <p style="text-align: center; margin-bottom: 2.5rem; color: var(--text-muted); font-size: 0.95rem;">Pricing depends on the project scope, but here's what to expect:</p>
+    <div class="pricing-card">
+      <ul class="pricing-list">
+        <li><span class="pricing-check">✓</span> Flexible for indie developers and smaller projects</li>
+        <li><span class="pricing-check">✓</span> Fixed-price or hourly, whatever suits the work</li>
+        <li><span class="pricing-check">✓</span> Happy to suggest a scope that fits your budget</li>
+      </ul>
+      <p class="pricing-note">If you're unsure, just message me and I'll help you figure it out.</p>
+      <div class="pricing-cta">
+        <a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); return false;">Let's Talk →</a>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width: 1000px; margin: 2rem auto; border-bottom: 2px solid rgba(124, 166, 126, 0.3); border-image: linear-gradient(to right, transparent, rgba(124, 166, 126, 0.3) 15%, rgba(124, 166, 126, 0.3) 85%, transparent) 1;"></div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-wrapper">
+      <h2>Get In Touch</h2>
+    
+      <form class="contact-form" action="https://formspree.io/f/xaqpeebo" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">Project Type</label>
+          <select id="project-type" name="project-type" required style="width: 100%; padding: 0.6rem; border-radius: 4px; border: 1px solid #555; font-family: inherit; font-size: 1rem; background-color: #2a2a2a; color: #ffffff;">
+            <option value="">Select project type...</option>
+            <option value="Just an idea">Just an idea/ inquiry</option>
+            <option value="Job opportunity">Job opportunity</option>
+            <option value="Short term project">Short term project</option>
+            <option value="Long term project">Long term project</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message or game idea..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit" class="cta-btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jack Longmore</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Show/hide sidebar on scroll
+    const sidebar = document.getElementById('mainSidebar');
+    let hasScrolled = false;
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100 && !hasScrolled) {
+        hasScrolled = true;
+        sidebar.style.display = 'flex';
+        sidebar.style.opacity = '1';
+        sidebar.style.pointerEvents = 'auto';
+      } else if (window.scrollY <= 100 && hasScrolled) {
+        hasScrolled = false;
+        sidebar.style.opacity = '0';
+        sidebar.style.pointerEvents = 'none';
+        setTimeout(() => {
+          sidebar.style.display = 'none';
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>
