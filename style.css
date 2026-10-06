@@ -1363,6 +1363,18 @@ nav .socials a:hover {
   font-size: 0.72rem;
 }
 
+.owner-card .personal-website-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.owner-card .personal-website-link:hover {
+  color: var(--text);
+}
+
 .owner-socials {
   display: flex;
   flex-wrap: wrap;
