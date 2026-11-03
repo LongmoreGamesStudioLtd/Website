@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="slideshow.css"/>
   <link rel="stylesheet" href="expandable.css"/>
   <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="enhancements.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     body {
@@ -73,12 +74,12 @@
 
     <div class="nav-right">
       <a href="#top" class="current">Home</a>
-      <a href="#studio">Studio</a>
       <a href="#games">Games</a>
+      <a href="tester.html">Become a Tester</a>
+      <a href="#studio">Studio</a>
       <a href="#contact">Contact</a>
       <div class="socials">
-        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/longy_dev" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
 
@@ -89,13 +90,13 @@
     <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
       <div class="menu-links">
         <a href="#top" style="--i:0">Home</a>
-        <a href="#studio" style="--i:1">Studio</a>
-        <a href="#games" style="--i:2">Games</a>
-        <a href="#contact" style="--i:3">Contact</a>
+        <a href="#games" style="--i:1">Games</a>
+        <a href="tester.html" style="--i:2">Become a Tester</a>
+        <a href="#studio" style="--i:3">Studio</a>
+        <a href="#contact" style="--i:4">Contact</a>
       </div>
       <div class="menu-socials" style="--i:4">
-        <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/longy_dev" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </nav>
@@ -121,28 +122,46 @@
         <p class="vision-statement">We are creating high-quality mobile games, with a focus on polished gameplay and careful production.</p>
       </div>
 
-      <div class="game-gallery" aria-label="Longmore Game Studios games">
-        <article class="featured-game">
-          <div class="featured-game-shots" id="treatTimeShots">
-            <img src="./NewImages/TreatTimeImages/treattime-dog.png" alt="Treat Time dog waiting for food">
-            <img src="./NewImages/TreatTimeImages/treattime-grid.png" alt="Treat Time puzzle grid">
-            <img src="./NewImages/TreatTimeImages/treattime-buttons.png" alt="Treat Time bone and bowl buttons">
-            <img src="./NewImages/TreatTimeImages/treattime-food.png" alt="Treat Time requested food">
+      <div class="game-list" aria-label="Longmore Game Studios games">
+        <a class="game-card" href="treattime.html">
+          <div class="game-card-art"><img src="./NewImages/TreatTimeImages/treattime-dog.png" alt="Treat Time"></div>
+          <div class="game-card-body">
+            <span class="game-badge">Coming December 2026</span>
+            <h3>Treat Time</h3>
+            <p>Our first title, a casual mobile game about feeding your dog!</p>
+            <div class="game-card-foot">
+              <span class="game-card-link">View game <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+              <span class="game-platforms"><i class="fa-brands fa-google-play" aria-hidden="true"></i><i class="fa-brands fa-apple" aria-hidden="true"></i></span>
+            </div>
           </div>
-          <h3>Treat Time</h3>
-          <p class="featured-game-description">Our first title, a casual mobile game about feeding your dog!</p>
-          <p class="featured-game-status">Coming soon to Apple and Android, December 2026.</p>
-          <div class="store-badges">
-            <span class="store-badge">
-              <i class="fa-brands fa-apple" aria-hidden="true"></i>
-              <span><small>Coming soon to the</small>App Store</span>
-            </span>
-            <span class="store-badge">
-              <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-              <span><small>Coming soon to</small>Google Play</span>
-            </span>
+        </a>
+
+        <div class="game-card is-tbc">
+          <div class="game-card-art"><i class="fa-solid fa-question" aria-hidden="true"></i></div>
+          <div class="game-card-body">
+            <span class="game-badge">To be confirmed</span>
+            <h3>Future game</h3>
+            <p>Another mobile game is in the works. Details coming soon.</p>
           </div>
-        </article>
+        </div>
+
+        <div class="game-card is-tbc">
+          <div class="game-card-art"><i class="fa-solid fa-question" aria-hidden="true"></i></div>
+          <div class="game-card-body">
+            <span class="game-badge">To be confirmed</span>
+            <h3>Future game</h3>
+            <p>Another mobile game is in the works. Details coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tester" class="centered-shell section-block">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Help us test</p>
+        <h2>Become a tester</h2>
+        <p class="vision-statement">Be among the first to play Treat Time. Testing is unpaid, but all testers will receive an in-game reward after launch.</p>
+        <p style="margin-top:1.5rem"><a class="cta-btn" href="tester.html" style="display:inline-block;text-decoration:none">Sign up to test</a></p>
       </div>
     </section>
 
@@ -168,7 +187,7 @@
           <p>Founder & Creative Director</p>
           <p>Personal website: <a class="personal-website-link" href="https://longydev.com/" target="_blank" rel="noopener">longydev.com</a></p>
           <div class="owner-socials">
-            <a href="https://www.linkedin.com/in/jacklongmorein/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/longy_dev" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@longydev" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             <a href="https://www.youtube.com/@LongyDev" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
@@ -194,7 +213,7 @@
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Contact for enquiries..." required></textarea>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
           </div>
 
           <div class="form-group" style="margin-top: 1rem;">
@@ -210,5 +229,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="enhancements.js"></script>
 </body>
 </html>

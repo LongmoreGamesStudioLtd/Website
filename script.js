@@ -5,31 +5,6 @@
   nav.classList.remove('scrolled');
 })();
 
-/* ===== Treat Time screenshot rotation ===== */
-(function () {
-  const shots = document.querySelectorAll('#treatTimeShots img');
-  if (shots.length < 2) return;
-
-  let current = 0;
-
-  function render() {
-    shots.forEach((shot, i) => {
-      const offset = (i - current + shots.length) % shots.length;
-      shot.classList.toggle('is-active', offset === 0);
-      shot.classList.toggle('is-next', offset === 1);
-      shot.classList.toggle('is-prev', offset === shots.length - 1);
-    });
-  }
-
-  render();
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  setInterval(() => {
-    current = (current + 1) % shots.length;
-    render();
-  }, 3500);
-})();
-
 /* ===== Mobile fading menu overlay ===== */
 (function () {
   const toggle = document.getElementById('menuToggle');

@@ -59,13 +59,8 @@
   max-width: 750px;
   width: 100%;
   text-align: center;
-  background: rgba(36, 36, 36, 0.4);
-  backdrop-filter: blur(10px);
+  background: none;
   padding: 2rem;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3),
-              inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 #contact h2 {

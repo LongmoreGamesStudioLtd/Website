@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Become a Tester | Longmore Games Studio</title>
+  <meta name="description" content="Sign up to test Treat Time, the upcoming mobile game from Longmore Games Studio." />
+  <link rel="icon" href="./New%20Logos/My%20Logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="enhancements.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { font-family: 'Manrope', Arial, sans-serif; }
+    h1, h2, h3, nav a { font-family: 'Sora', Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <div class="brand-logo-crop brand-logo-crop-nav">
+          <img src="./New%20Logos/My%20Logo.png" alt="Longmore Games Studio">
+        </div>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="index.html#games">Games</a>
+      <a href="tester.html" class="current">Become a Tester</a>
+      <a href="index.html#studio">Studio</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuOverlay">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-links">
+        <a href="index.html" style="--i:0">Home</a>
+        <a href="index.html#games" style="--i:1">Games</a>
+        <a href="tester.html" style="--i:2">Become a Tester</a>
+        <a href="index.html#studio" style="--i:3">Studio</a>
+        <a href="index.html#contact" style="--i:4">Contact</a>
+      </div>
+      <div class="menu-socials" style="--i:4">
+        <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="centered-shell section-block checkered" style="padding-top: 9rem;">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Help us test</p>
+        <h2>Become a tester</h2>
+        <p class="vision-statement">Get early access to Treat Time and help shape the game before launch.</p>
+      </div>
+
+      <p class="tester-note"><strong>Please note:</strong> testing is not paid. As a thank you, all testers will receive an in-game reward after launch.</p>
+
+      <form class="contact-form tester-form" id="testerForm" action="https://formspree.io/f/xaqpeebo" method="POST">
+        <input type="hidden" name="_subject" value="New Treat Time tester sign-up">
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="t-email">Email</label>
+          <input type="email" id="t-email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Contact number <span class="opt">(optional)</span></label>
+          <input type="tel" id="phone" name="contact_number" placeholder="Optional">
+        </div>
+        <div class="form-group">
+          <label for="device">Type of phone</label>
+          <select id="device" name="phone_type" required>
+            <option value="" disabled selected>Select...</option>
+            <option>iPhone</option>
+            <option>Android</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="model">Phone model <span class="opt">(optional)</span></label>
+          <input type="text" id="model" name="phone_model" placeholder="e.g. iPhone 14, Pixel 8">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="5" max="120" placeholder="Your age" required>
+        </div>
+        <div class="form-group">
+          <label for="exp">Mobile gaming experience</label>
+          <select id="exp" name="mobile_gaming_experience" required>
+            <option value="" disabled selected>Select...</option>
+            <option>Casual - I play occasionally</option>
+            <option>Regular - I play most days</option>
+            <option>Hardcore - I play a lot and across many genres</option>
+            <option>New - I rarely play mobile games</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about testing Treat Time. Testing is unpaid, with an in-game reward after launch.</label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="cta-btn">Sign up to test</button>
+          <p class="form-status" id="testerStatus" role="status"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Longmore Game Studios LTD</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="enhancements.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Treat Time | Longmore Games Studio</title>
+  <meta name="description" content="Treat Time, a casual mobile game about feeding your dog. Coming to Apple and Android in December 2026." />
+  <link rel="icon" href="./New%20Logos/My%20Logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="enhancements.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { font-family: 'Manrope', Arial, sans-serif; }
+    h1, h2, h3, nav a { font-family: 'Sora', Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo-link">
+        <div class="brand-logo-crop brand-logo-crop-nav">
+          <img src="./New%20Logos/My%20Logo.png" alt="Longmore Games Studio">
+        </div>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="index.html#games" class="current">Games</a>
+      <a href="tester.html">Become a Tester</a>
+      <a href="index.html#studio">Studio</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuOverlay">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-links">
+        <a href="index.html" style="--i:0">Home</a>
+        <a href="index.html#games" style="--i:1">Games</a>
+        <a href="tester.html" style="--i:2">Become a Tester</a>
+        <a href="index.html#studio" style="--i:3">Studio</a>
+        <a href="index.html#contact" style="--i:4">Contact</a>
+      </div>
+      <div class="menu-socials" style="--i:4">
+        <a href="https://www.linkedin.com/company/longmore-games-studio/home/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="game-hero">
+    <div class="game-hero-clips" aria-hidden="true">
+      <div class="hero-col hero-col-left">
+        <img src="./NewImages/TreatTimeImages/hero-wilson.jpg" alt="" loading="lazy">
+        <img src="./NewImages/TreatTimeImages/hero-nextmeal.jpg" alt="" loading="lazy">
+      </div>
+      <video class="clip-main" autoplay muted loop playsinline preload="auto">
+        <source src="./NewVideos/Treatime/treattime-hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-col hero-col-right">
+        <img src="./NewImages/TreatTimeImages/hero-animals.jpg" alt="" loading="lazy">
+        <img src="./NewImages/TreatTimeImages/hero-buttons.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+    <div class="game-hero-text">
+      <h1>Treat Time</h1>
+      <p>A casual mobile game about feeding your dog.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="centered-shell section-block">
+      <div class="game-details">
+        <p class="featured-game-status">Coming soon to Apple and Android, December 2026.</p>
+        <div class="store-badges">
+          <span class="store-badge">
+            <i class="fa-brands fa-apple" aria-hidden="true"></i>
+            <span><small>Coming soon to the</small>App Store</span>
+          </span>
+          <span class="store-badge">
+            <i class="fa-brands fa-google-play" aria-hidden="true"></i>
+            <span><small>Coming soon to</small>Google Play</span>
+          </span>
+        </div>
+
+        <a class="cta-btn tester-cta" href="tester.html">Become a tester</a>
+        <p class="vision-statement" style="margin-top:1rem">Testing is unpaid, but all testers receive an in-game reward after launch.</p>
+      </div>
+    </section>
+
+    <section id="social" class="centered-shell section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Follow the journey</p>
+        <h2>Latest videos</h2>
+        <p class="vision-statement">Short clips from development on TikTok and YouTube Shorts.</p>
+      </div>
+      <!-- Add a card per video: set data-url to a TikTok video, YouTube Short or a local .mp4 path -->
+      <div class="social-grid" id="socialGrid">
+        <div class="social-card" data-url="https://www.tiktok.com/@longydev/video/7701298798361922838"></div>
+        <div class="social-card" data-url="https://www.tiktok.com/@longydev/video/7699525620379815190"></div>
+        <div class="social-card" data-url="https://www.tiktok.com/@longydev/video/7696810144021171478"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Longmore Game Studios LTD</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="enhancements.js"></script>
+</body>
+</html>
